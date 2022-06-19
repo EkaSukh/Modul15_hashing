@@ -12,9 +12,9 @@ public:
     void reg(char _login[LOGINLENGTH], char _pass[], int pass_length);
     bool login(char _login[LOGINLENGTH], char _pass[], int pass_length);
 
-    friend void test(Chat& c);
+   // friend void test(Chat& c);
 
-    HashTable users_hash_massive;
+    
 private:
     struct AuthData {
         AuthData() :
@@ -45,6 +45,6 @@ private:
     };
 
     AuthData data[SIZE];
-    
+    HashTable users_hash_massive;
     int data_count;
 };
